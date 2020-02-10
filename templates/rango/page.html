@@ -1,0 +1,14 @@
+<html>
+    <head>
+    <title>Rango</title>
+    </head>
+    <body>
+        <div>
+        {% if pages %}
+        <h1>{{ pages.title }}</h1>
+        {% else %}
+        The specified page does not exist
+        {% endif %}
+        </div>
+    </body>
+</html>
