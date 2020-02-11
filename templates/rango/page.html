@@ -4,10 +4,14 @@
     </head>
     <body>
         <div>
-        {% if pages %}
-        <h1>{{ pages.title }}</h1>
+        {% if category %}
+            {% if page %}
+            <h1>{{ page.title }}</h1>
+                <a href = "{{page.url}}">
+            {% else %}
+            The specified page does not exist
         {% else %}
-        The specified page does not exist
+             The specified category does not exist
         {% endif %}
         </div>
     </body>

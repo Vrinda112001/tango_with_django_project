@@ -13,7 +13,8 @@
             <strong>{{ boldmessage }}</strong></br>
         </div>
         <div>
-            {% if categories%}
+            <strong>Most Liked Categories</strong>
+            {% if categories %}
             <ul>
                 {% for category in categories %}
                 <li><a href="/rango/category/{{ category.slug }}/">{{category.name}}</a></li>
@@ -28,7 +29,7 @@
             {% if pages %}
             <ul>
                 {% for page in pages %}
-                <li><a href="/rango/page/{{ page.slug }}/">{{page.title}}</a></li>
+                <li><a href="{{page.url}}">{{page.title}}</a></li>
                 {% endfor %}
             </ul>
             {% else %}
@@ -37,6 +38,7 @@
         </div>
         <div>
             <a href="/rango/about/">About</a><br />
+            <a href="/rango/add_category/">Add a New Category</a><br />
             <img src="{% static 'images/rango.jpg' %}"
                  alt="Picture of Rango" /><!-- New line -->
         </div>
