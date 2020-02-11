@@ -30,4 +30,3 @@ class PageForm(forms.ModelForm):
             url = f'http://{{url}}'
             cleaned_data['url'] = url
         return cleaned_data
-
