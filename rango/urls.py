@@ -10,4 +10,5 @@ urlpatterns = [
     path('add_category/', views.add_category, name="add_category"),
     path('category/<slug:category_name_slug>/add_page/', views.add_page, name="add_page"),
     path('page/<slug:page_name_slug>/', views.show_page, name="show_page"),
+    path('register/', views.register, name='register'),
 ]
